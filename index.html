@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Frontend Mentor | Expenses chart component</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-tex">
+        <h3 class="header-h3">My balance</h3>
+        <h1 class="header-amount-text">$921.48</h1>
+      </div>
+      <svg
+        width="72"
+        height="48"
+        viewBox="0 0 72 48"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g fill="none" fill-rule="evenodd">
+          <circle fill="#382314" cx="48" cy="24" r="24" />
+          <circle stroke="#FFF" stroke-width="2" cx="24" cy="24" r="23" />
+        </g>
+      </svg>
+    </header>
+    <main>
+      <h1 class="header-amount-text title">Spending - Last 7 days</h1>
+      <div class="chart">
+        <div class="mon-text-obj">
+          <div class="mon-hover">
+            <p>$17.45</p>
+          </div>
+          <div class="mon"></div>
+          <span>mon</span>
+        </div>
+        <div class="mon-text-obj">
+          <div class="tue-hover">
+            <p>$34.91</p>
+          </div>
+          <div class="tue"></div>
+          <span>tue</span>
+        </div>
+        <div class="mon-text-obj">
+          <div class="wed-hover">
+            <p>$52.36</p>
+          </div>
+          <div class="wed"></div>
+          <span>wed</span>
+        </div>
+        <div class="mon-text-obj">
+          <div class="thu-hover">
+            <p>$31.07</p>
+          </div>
+          <div class="thu"></div>
+          <span>thu</span>
+        </div>
+        <div class="mon-text-obj">
+          <div class="fri-hover">
+            <p>$23.39</p>
+          </div>
+          <div class="fri"></div>
+          <span>fri</span>
+        </div>
+        <div class="mon-text-obj">
+          <div class="sat-hover">
+            <p>$43.28</p>
+          </div>
+          <div class="sat"></div>
+          <span>sat</span>
+        </div>
+        <div class="mon-text-obj">
+          <div class="sun-hover">
+            <p>$25.48</p>
+          </div>
+          <div class="sun"></div>
+          <span>sun</span>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="main-text-both">
+      <div class="main-text-left">
+        <h3 class="main-h3-left">Total this month</h3>
+        <h1 class="main-h1-left">$478.33</h1>
+      </div>
+      <div class="main-text-right">
+        <h3 class="main-h3-right">+2.4%</h3>
+        <h3 class="main-h3-right-two">+2.4% from last month</h1>
+      </div>
+    </div>
+    </main>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor.</a
+      >
+      Coded by <a href="https://dovla.me" target="_blank" rel=”noopener noreferrer”>Vlado</a>.
+    </footer>
+    <script>
+      const mon = document.querySelector('.mon');
+      const tue = document.querySelector('.tue');
+      const wed = document.querySelector('.wed');
+      const thu = document.querySelector('.thu');
+      const fri = document.querySelector('.fri');
+      const sat = document.querySelector('.sat');
+      const sun = document.querySelector('.sun');
+      const monDesc = document.querySelector('.mon-hover');
+      const tueDesc = document.querySelector('.tue-hover');
+      const wedDesc = document.querySelector('.wed-hover');
+      const thuDesc = document.querySelector('.thu-hover');
+      const friDesc = document.querySelector('.fri-hover');
+      const satDesc = document.querySelector('.sat-hover');
+      const sunDesc = document.querySelector('.sun-hover');
+
+      // Monday
+      mon.addEventListener("mouseover", function() {
+        monDesc.style.visibility = "visible";
+      })
+        mon.addEventListener("mouseout", function() {
+        monDesc.style.visibility = "hidden"
+      });
+
+       // Tuesday
+       tue.addEventListener("mouseover", function() {
+        tueDesc.style.visibility = "visible";
+      })
+        tue.addEventListener("mouseout", function() {
+        tueDesc.style.visibility = "hidden"
+      });
+
+      // Wednesday
+      wed.addEventListener("mouseover", function() {
+        wedDesc.style.visibility = "visible";
+      })
+        wed.addEventListener("mouseout", function() {
+        wedDesc.style.visibility = "hidden"
+      });
+
+      // Thursday
+      thu.addEventListener("mouseover", function() {
+        thuDesc.style.visibility = "visible";
+      })
+        thu.addEventListener("mouseout", function() {
+        thuDesc.style.visibility = "hidden"
+      });
+
+      // Friday
+      fri.addEventListener("mouseover", function() {
+        friDesc.style.visibility = "visible";
+      })
+        fri.addEventListener("mouseout", function() {
+        friDesc.style.visibility = "hidden"
+      });
+
+       // Saturday
+       sat.addEventListener("mouseover", function() {
+        satDesc.style.visibility = "visible";
+      })
+        sat.addEventListener("mouseout", function() {
+        satDesc.style.visibility = "hidden"
+      });
+
+       // Sunday
+       sun.addEventListener("mouseover", function() {
+        sunDesc.style.visibility = "visible";
+      })
+        sun.addEventListener("mouseout", function() {
+        sunDesc.style.visibility = "hidden"
+      });
+    </script>
+  </body>
+</html>
