@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://spectacular-daifuku-172c13.netlify.app)
+- Solution URL: [Click here](https://www.frontendmentor.io/solutions/expenses-chart-component-f-Pm3M8MOP)
+- Live Solution URL: [Click here](https://spectacular-daifuku-172c13.netlify.app)
 
 ## My process
 
